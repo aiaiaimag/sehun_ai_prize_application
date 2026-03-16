@@ -1,26 +1,49 @@
-[Target Global Art Prizes 2026 for AI Still Image]
+[Target Global Art Prizes 2026 for AI Still Image Artist]
 
 1. The Lumen Prize for Art and Technology 2026
-- Deadline: May 25, 2026
-- URL: lumenprize.com
-- Focus: Tech & Digital Art, high exposure to tech-art curators.
+- Deadline: May 23, 2026
+- URL: https://lumenprize.org
+- Focus: Tech & Digital Art (Still Image category), AI art explicitly accepted
+- Prize: $15,000 (Grand Prize) + category prizes
+- Entry Fee: $45/artwork
+- AI Accepted: YES (explicitly supports AI art, generative art)
 
-2. Prix Ars Electronica 2026
-- Deadline: March 1, 2026
-- URL: ars.electronica.art/prix
-- Focus: Deep academic and artistic evaluation of media/tech art.
+2. Charis Awards 2026 (1st Edition)
+- Deadline: May 24, 2026
+- URL: https://charis.ai
+- Focus: First dedicated AI art awards — Photorealism, Visual Arts, Fashion, Architecture
+- Prize: $1,000 + Exhibition at International Art Museum of America (San Francisco)
+- Entry Fee: FREE
+- AI Accepted: YES (AI-only competition)
 
-3. Aesthetica Art Prize 2026
+3. The CIRCA Prize 2026
+- Deadline: June 20, 2026 (TBC)
+- URL: https://circa.art
+- Focus: Public exposure (Piccadilly Circus, COEX), Digital Practices accepted
+- Prize: £10,000–£30,000 + public art commission
+- Entry Fee: TBC
+- AI Accepted: YES (AI finalists in past editions)
+
+4. The AI Design Awards 2026
+- Deadline: August 30, 2026 (Main) / September 14, 2026 (Last Call)
+- URL: https://designaward.ai
+- Focus: AI-powered creativity across design and art
+- Prize: TBC
+- Entry Fee: TBC (10% discount before April 30)
+- AI Accepted: YES (AI-only competition)
+
+5. Aesthetica Art Prize 2026
 - Deadline: August 31, 2026
-- URL: aestheticamagazine.com/art-prize
-- Focus: Fine art context, strong bridge to mainstream contemporary art (Tate, Frieze).
+- URL: https://aestheticamagazine.com/artprize
+- Focus: Fine art context, bridge to mainstream contemporary art (Tate, Frieze)
+- Prize: £10,000 + group exhibition
+- Entry Fee: £24/artwork
+- AI Accepted: YES (accepts digital art, any discipline, any theme)
 
-4. The CIRCA Prize 2026
-- Deadline: July 20, 2026
-- URL: circa.art
-- Focus: Massive public exposure (Piccadilly Circus, COEX) and high-impact branding.
-
-5. Sigg Art Prize 2026
-- Deadline: October 15, 2026
-- URL: siggartprize.com
-- Focus: Connection to high-end global collectors and commercial tech-art market.
+6. Prix Ars Electronica 2027 (Preparation)
+- Deadline: ~March 2027
+- URL: https://ars.electronica.art/prix
+- Focus: "AI in Art" dedicated category, Golden Nica awards
+- Prize: €10,000 (Golden Nica)
+- Entry Fee: FREE
+- AI Accepted: YES (dedicated AI in Art category)
