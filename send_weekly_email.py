@@ -151,6 +151,12 @@ def apply_inline(text):
     )
     # *italic*
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
+    # URL을 클릭 가능한 링크로
+    text = re.sub(
+        r"(https?://[^\s<]+)",
+        r'<a href="\1" style="color:#3498db;text-decoration:none;" target="_blank">\1</a>',
+        text,
+    )
     # 상태 배지
     text = text.replace(
         "✅",
