@@ -1,0 +1,25 @@
+name: Weekly Art Prize Email
+
+on:
+  schedule:
+    # 매주 월요일 오전 9시 (KST) = 일요일 자정 (UTC)
+    - cron: '0 0 * * 1'
+  workflow_dispatch: # 수동 실행도 가능
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Send weekly email
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python send_weekly_email.py
