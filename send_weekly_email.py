@@ -61,7 +61,7 @@ def md_to_html(md):
                 continue
             if not in_table:
                 html_lines.append(
-                    '<table style="width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;">'
+                    '<table style="width:100%;border-collapse:collapse;margin:8px 0;font-size:11px;">'
                 )
                 in_table = True
                 html_lines.append("<thead><tr>")
@@ -100,39 +100,39 @@ def md_to_html(md):
         # 헤딩
         if stripped.startswith("# "):
             html_lines.append(
-                f'<h1 style="color:#1a1a2e;font-size:26px;font-weight:700;margin:24px 0 8px;'
-                f'padding-bottom:12px;border-bottom:3px solid #3498db;">{apply_inline(stripped[2:])}</h1>'
+                f'<h1 style="color:#1a1a2e;font-size:18px;font-weight:700;margin:16px 0 6px;'
+                f'padding-bottom:8px;border-bottom:3px solid #3498db;">{apply_inline(stripped[2:])}</h1>'
             )
         elif stripped.startswith("## "):
             html_lines.append(
-                f'<h2 style="color:#2c3e50;font-size:20px;font-weight:600;margin:24px 0 8px;'
-                f'padding-bottom:8px;border-bottom:2px solid #ecf0f1;">{apply_inline(stripped[3:])}</h2>'
+                f'<h2 style="color:#2c3e50;font-size:15px;font-weight:600;margin:16px 0 6px;'
+                f'padding-bottom:6px;border-bottom:2px solid #ecf0f1;">{apply_inline(stripped[3:])}</h2>'
             )
         elif stripped.startswith("### "):
             html_lines.append(
-                f'<h3 style="color:#34495e;font-size:17px;font-weight:600;margin:20px 0 8px;'
-                f'padding:10px 14px;background:#f0f4f8;border-left:4px solid #3498db;border-radius:0 6px 6px 0;">'
+                f'<h3 style="color:#34495e;font-size:14px;font-weight:600;margin:14px 0 6px;'
+                f'padding:8px 12px;background:#f0f4f8;border-left:4px solid #3498db;border-radius:0 6px 6px 0;">'
                 f'{apply_inline(stripped[4:])}</h3>'
             )
         # 리스트
         elif stripped.startswith("- "):
             content = stripped[2:]
             html_lines.append(
-                f'<div style="padding:4px 0 4px 20px;margin:2px 0;line-height:1.7;">'
-                f'<span style="color:#3498db;margin-right:8px;">&#9654;</span>{apply_inline(content)}</div>'
+                f'<div style="padding:2px 0 2px 16px;margin:1px 0;line-height:1.5;font-size:12px;">'
+                f'<span style="color:#3498db;margin-right:6px;">&#9654;</span>{apply_inline(content)}</div>'
             )
         elif re.match(r"^\d+\.", stripped):
             num, content = stripped.split(".", 1)
             html_lines.append(
-                f'<div style="padding:4px 0 4px 20px;margin:2px 0;line-height:1.7;">'
-                f'<span style="display:inline-block;width:24px;height:24px;background:#3498db;color:#fff;'
-                f'border-radius:50%;text-align:center;line-height:24px;font-size:12px;font-weight:700;'
-                f'margin-right:10px;">{num.strip()}</span>{apply_inline(content.strip())}</div>'
+                f'<div style="padding:2px 0 2px 16px;margin:1px 0;line-height:1.5;font-size:12px;">'
+                f'<span style="display:inline-block;width:18px;height:18px;background:#3498db;color:#fff;'
+                f'border-radius:50%;text-align:center;line-height:18px;font-size:10px;font-weight:700;'
+                f'margin-right:8px;">{num.strip()}</span>{apply_inline(content.strip())}</div>'
             )
         # 일반 텍스트
         else:
             html_lines.append(
-                f'<p style="margin:6px 0;line-height:1.8;color:#333;">{apply_inline(stripped)}</p>'
+                f'<p style="margin:4px 0;line-height:1.6;color:#333;font-size:12px;">{apply_inline(stripped)}</p>'
             )
 
     if in_table:
@@ -216,7 +216,7 @@ def send_email():
         </tr>
         <!-- 본문 -->
         <tr>
-          <td style="padding:28px 36px 36px;font-size:15px;color:#333;line-height:1.7;">
+          <td style="padding:20px 28px 28px;font-size:12px;color:#333;line-height:1.6;">
             {body_html}
           </td>
         </tr>
