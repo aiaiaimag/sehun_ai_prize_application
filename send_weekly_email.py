@@ -72,8 +72,10 @@ def send_email():
             server.login(SENDER_EMAIL, SENDER_APP_PASSWORD)
             server.sendmail(SENDER_EMAIL, RECIPIENT_EMAIL, msg.as_string())
         print(f"[{today}] 이메일 발송 성공! -> {RECIPIENT_EMAIL}")
-    except smtplib.SMTPAuthenticationError:
-        print("ERROR: Gmail 인증 실패. 앱 비밀번호를 확인해주세요.")
+    except smtplib.SMTPAuthenticationError as e:
+        print(f"ERROR: Gmail 인증 실패. 코드: {e.smtp_code}, 메시지: {e.smtp_error}")
+        print(f"사용된 이메일: {SENDER_EMAIL}")
+        print(f"비밀번호 길이: {len(SENDER_APP_PASSWORD)}")
         sys.exit(1)
     except Exception as e:
         print(f"ERROR: 이메일 발송 실패 - {e}")
