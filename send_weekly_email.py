@@ -159,16 +159,8 @@ def apply_inline(text):
     )
     # 상태 배지
     text = text.replace(
-        "✅",
-        '<span style="background:#27ae60;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px;">✅ </span>',
-    )
-    text = text.replace(
-        "⚠️",
-        '<span style="background:#f39c12;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px;">⚠️ </span>',
-    )
-    text = text.replace(
         "⭐",
-        '<span style="background:#e74c3c;color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;">⭐ 중요</span>',
+        '<span style="background:#e74c3c;color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;">중요</span>',
     )
     return text
 
