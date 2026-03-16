@@ -11,7 +11,7 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
 # === 설정 ===
-SENDER_EMAIL = "erichoi815@gmail.com"
+SENDER_EMAIL = "chltpdpf@gmail.com"
 SENDER_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "").replace(" ", "")
 RECIPIENT_EMAIL = "erichoi815@gmail.com"
 SMTP_SERVER = "smtp.gmail.com"
