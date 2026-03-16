@@ -177,7 +177,7 @@ def send_email():
     body_html = md_to_html(content)
 
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"🎨 [Art Prize 2026] 주간 지원 전략 리포트 — {today}"
+    msg["Subject"] = f"Art Prize 업데이트 - {today}"
     msg["From"] = SENDER_EMAIL
     msg["To"] = RECIPIENT_EMAIL
 
@@ -194,24 +194,10 @@ def send_email():
     <tr><td align="center" style="padding:24px 16px;">
       <table role="presentation" width="680" cellpadding="0" cellspacing="0"
              style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden;">
-        <!-- 헤더 -->
-        <tr>
-          <td style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:32px 36px;">
-            <h1 style="margin:0;color:#fff;font-size:24px;font-weight:700;letter-spacing:-0.5px;">
-              🎨 아트 프라이즈 지원 전략
-            </h1>
-            <p style="margin:8px 0 0;color:#a8c0e0;font-size:14px;">
-              AI 아티스트 세훈 — 2026 글로벌 지원 캠페인 | 주간 리포트
-            </p>
-          </td>
-        </tr>
         <!-- 날짜 바 -->
         <tr>
-          <td style="background:#eaf2fb;padding:12px 36px;border-bottom:1px solid #d6e4f0;">
-            <table width="100%" cellpadding="0" cellspacing="0"><tr>
-              <td style="color:#5a7da8;font-size:13px;">📅 발송일: {today}</td>
-              <td align="right" style="color:#5a7da8;font-size:13px;">매주 월요일 자동 발송</td>
-            </tr></table>
+          <td style="background:#1a1a2e;padding:14px 28px;">
+            <span style="color:#fff;font-size:14px;font-weight:600;">Art Prize - {today} 기준</span>
           </td>
         </tr>
         <!-- 본문 -->
