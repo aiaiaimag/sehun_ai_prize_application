@@ -1,8 +1,6 @@
 name: Weekly Art Prize Email
 
 on:
-  push:
-    branches: [master]
   schedule:
     # 매주 월요일 오전 9시 (KST) = 일요일 자정 (UTC)
     - cron: '0 0 * * 1'
